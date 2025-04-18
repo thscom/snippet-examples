@@ -1,0 +1,20 @@
+{
+  "routerMap": [
+    {
+      "name": "MainPage",
+      "pageSourceFile": "src/main/ets/pages/MainPage.ets",
+      "buildFunction": "MainPageBuilder",
+      "data": {
+        "description": "This is MainPage"
+      }
+    },
+    {
+      "name": "GoalPage",
+      "pageSourceFile": "src/main/ets/pages/GoalPage.ets",
+      "buildFunction": "GoalPageBuilder",
+      "data": {
+        "description": "This is GoalPage"
+      }
+    }
+  ]
+}
