@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="blackboard"></p>
+    <script type="module">
+        import init, { greet } from "./lib_wasm.js";
+        init().then(() => {
+            document.getElementById("blackboard").textContent = greet("World")
+            console.log(greet("World"));
+        });
+    </script>
+</body>
+</html>
