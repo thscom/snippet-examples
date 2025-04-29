@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp", "WalletApp\WalletApp.csproj", "{971E97DA-D781-4EB6-8C23-37E2E6C56E21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Assets", "Common\WalletApp.Assets\WalletApp.Assets.csproj", "{1EAF3501-20F8-4290-BF28-9F7B445EEDFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3E6F7459-A594-420A-9812-99A7EDE786E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Dashboard", "Modules\WalletApp.Dashboard\WalletApp.Dashboard.csproj", "{8FFA40AD-D500-4843-BBD8-7BFB91D3A94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Cards", "Modules\WalletApp.Cards\WalletApp.Cards.csproj", "{6A08912D-C0DC-48B0-BC7B-80684A86FE9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Insights", "Modules\WalletApp.Insights\WalletApp.Insights.csproj", "{41C03F20-8CB7-45C9-BB8F-CBEBF5882128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Manage", "Modules\WalletApp.Manage\WalletApp.Manage.csproj", "{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{971E97DA-D781-4EB6-8C23-37E2E6C56E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971E97DA-D781-4EB6-8C23-37E2E6C56E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971E97DA-D781-4EB6-8C23-37E2E6C56E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971E97DA-D781-4EB6-8C23-37E2E6C56E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAF3501-20F8-4290-BF28-9F7B445EEDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAF3501-20F8-4290-BF28-9F7B445EEDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAF3501-20F8-4290-BF28-9F7B445EEDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAF3501-20F8-4290-BF28-9F7B445EEDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFA40AD-D500-4843-BBD8-7BFB91D3A94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFA40AD-D500-4843-BBD8-7BFB91D3A94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFA40AD-D500-4843-BBD8-7BFB91D3A94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFA40AD-D500-4843-BBD8-7BFB91D3A94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A08912D-C0DC-48B0-BC7B-80684A86FE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A08912D-C0DC-48B0-BC7B-80684A86FE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A08912D-C0DC-48B0-BC7B-80684A86FE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A08912D-C0DC-48B0-BC7B-80684A86FE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C03F20-8CB7-45C9-BB8F-CBEBF5882128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C03F20-8CB7-45C9-BB8F-CBEBF5882128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C03F20-8CB7-45C9-BB8F-CBEBF5882128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C03F20-8CB7-45C9-BB8F-CBEBF5882128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EAF3501-20F8-4290-BF28-9F7B445EEDFC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8FFA40AD-D500-4843-BBD8-7BFB91D3A94F} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
+		{6A08912D-C0DC-48B0-BC7B-80684A86FE9A} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
+		{41C03F20-8CB7-45C9-BB8F-CBEBF5882128} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
+		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF8B96B6-0188-4E64-8007-519876D4E8C3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="5.1.0" />
+    <PackageReference Include="Prism.DryIoc" Version="9.0.537" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\WalletApp.Assets\WalletApp.Assets.csproj" />
+    <ProjectReference Include="..\Modules\WalletApp.Cards\WalletApp.Cards.csproj" />
+    <ProjectReference Include="..\Modules\WalletApp.Dashboard\WalletApp.Dashboard.csproj" />
+    <ProjectReference Include="..\Modules\WalletApp.Insights\WalletApp.Insights.csproj" />
+    <ProjectReference Include="..\Modules\WalletApp.Manage\WalletApp.Manage.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WalletApp.Dashboard.Components.CardInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WalletApp.Dashboard.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="160" d:DesignWidth="300">
+
+    <Style TargetType="{x:Type local:CardInfo}">
+        <Setter Property="MinWidth" Value="300" />
+        <Setter Property="MinHeight" Value="160" />
+        <Setter Property="Foreground" Value="#222" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:CardInfo}">
+                    <Border CornerRadius="5" Background="#888">
+                        <TextBlock Text="{TemplateBinding Balance}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</UserControl>
