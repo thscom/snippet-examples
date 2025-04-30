@@ -10,10 +10,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition />
         </Grid.RowDefinitions>
         <Border Background="#222" />
         <TextBlock Text="Dashboard" Foreground="Red" FontSize="18" />
-        <c:CardInfo Balance="22.00" />
+        
     </Grid>
 </UserControl>

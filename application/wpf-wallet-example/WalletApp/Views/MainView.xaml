@@ -35,7 +35,7 @@
                 </b:EventTrigger>
                 <b:EventTrigger EventName="SelectionChanged">
                     <p:InvokeCommandAction Command="{Binding AsideMenuCommand}"
-                           CommandParameter="{Binding ElementName=asideMenu,Path=SelectedItem}" />
+                                           CommandParameter="{Binding ElementName=asideMenu,Path=SelectedItem}" />
                 </b:EventTrigger>
             </b:Interaction.Triggers> 
             <ListBox.ItemContainerStyle>
