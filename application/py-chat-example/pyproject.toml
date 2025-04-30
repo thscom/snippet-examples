@@ -1,0 +1,13 @@
+[project]
+name = "py-chat-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.24",
+    "langchain-mcp-adapters>=0.0.9",
+    "langchain-ollama>=0.3.2",
+    "mcp>=1.6.0",
+    "pyside6>=6.9.0",
+]
