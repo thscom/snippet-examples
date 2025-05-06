@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Escaping</h1>
+    <p>
+        {{ "upcase" | upcase }}
+    </p>
+    <p>
+        {{ "Downcase" | downcase }}
+    </p>
+    <p>
+        {{ "capitalize" | capitalize }}
+    </p>
+    <p>
+        {{ "replace Hello to Goodbye" | replace: "Hello", "Goodbye" }}
+    </p>
+    <p>
+        {{ "slice[0:5]: Hello World" | slice: 0, 5 }}
+    </p>
+    <p>
+        {{ "append '!': Hello World" | append: "!" }}
+    </p>
+    <p>
+        {{ "prepend '!': Hello World" | prepend: "!" }}
+    </p>
+    <p>
+        {{ "split: Hello World" | split: " " }}
+    </p>
+    <p>
+        {{ "join: Hello World" | join: " " }}
+    </p>
+    <p>
+        {{ "size: Hello World" | size }}
+    </p>
+    <p>
+        {{ "1 < 2 & 2> 1 && 3 @ 4" | escape }}
+    </p>
+    <p>
+        {{ "<button>Click</button>" | raw }}
+    </p>
+    <p>
+        {% raw %}
+        <button>raw block</button>
+        {% endraw %}
+    </p>
+</body>
+
+</html>
