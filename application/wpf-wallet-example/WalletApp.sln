@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp", "WalletApp\WalletApp.csproj", "{971E97DA-D781-4EB6-8C23-37E2E6C56E21}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Insights", "Modules\WalletApp.Insights\WalletApp.Insights.csproj", "{41C03F20-8CB7-45C9-BB8F-CBEBF5882128}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApp.Manage", "Modules\WalletApp.Manage\WalletApp.Manage.csproj", "{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{108A40EB-236C-4C63-A193-FF8429C9A83D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCSharp", "Tests\TestCSharp\TestCSharp.csproj", "{C7FD0525-0F27-4FE7-BF9B-B8E73B1306E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7FD0525-0F27-4FE7-BF9B-B8E73B1306E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7FD0525-0F27-4FE7-BF9B-B8E73B1306E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7FD0525-0F27-4FE7-BF9B-B8E73B1306E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7FD0525-0F27-4FE7-BF9B-B8E73B1306E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{6A08912D-C0DC-48B0-BC7B-80684A86FE9A} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
 		{41C03F20-8CB7-45C9-BB8F-CBEBF5882128} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
 		{2CB7DFC8-C8BD-4969-AA91-8164B646DAD3} = {3E6F7459-A594-420A-9812-99A7EDE786E7}
+		{C7FD0525-0F27-4FE7-BF9B-B8E73B1306E5} = {108A40EB-236C-4C63-A193-FF8429C9A83D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF8B96B6-0188-4E64-8007-519876D4E8C3}
