@@ -1,5 +1,4 @@
 from typing import Optional, List, Tuple
-from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QMainWindow, QPlainTextEdit, QListWidgetItem
 from .mainwindow_ui import Ui_MainWindow
 from langchain_ollama import ChatOllama
