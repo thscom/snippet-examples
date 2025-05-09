@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>Button.qml</file>
+        <file>Attribute.qml</file>
+        <file>Canvas.qml</file>
+        <file>Canvas2.qml</file>
+        <file>Main.qml</file>
+        <file>MVC.qml</file>
+        <file>Text.qml</file>
+        <file>Flickable.qml</file>
+        <file>TextEdit.qml</file>
+        <file>TextInput.qml</file>
+        <file>GridView.qml</file>
+        <file>GridViewItem.qml</file>
+        <file>ListView.qml</file>
+        <file>Animate.qml</file>
+        <file>BusyIndicator.qml</file>
+        <file>CheckBox.qml</file>
+        <file>ComboBox.qml</file>
+        <file>DelayButton.qml</file>
+        <file>Dial.qml</file>
+        <file>Dialog.qml</file>
+        <file>Drawer.qml</file>
+        <file>Locator.qml</file>
+        <file>PathView.qml</file>
+        <file>Popup.qml</file>
+        <file>ProgressBar.qml</file>
+        <file>ChildListView.qml</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>res/bg.jpg</file>
+        <file>res/Checked.png</file>
+        <file>res/PartiallyChecked.png</file>
+        <file>res/UnChecked.png</file>
+    </qresource>
+</RCC>
