@@ -7,12 +7,14 @@ requires-python = ">=3.11"
 dependencies = [
     "matplotlib>=3.10.3",
     "numpy>=2.2.5",
+    "onnx>=1.18.0",
+    "onnxruntime>=1.22.0",
+    "onnxslim>=0.1.52",
     "opencv-contrib-python>=4.11.0.86",
     # 含GUI
     "opencv-python>=4.11.0.86",
+    "pyside6>=6.9.0",
     # 不含GUI，用于服务器
     # "opencv-python-headless>=4.11.0.86",
-    "pillow>=11.2.1",
-    "pyqt6>=6.9.0",
     "ultralytics>=8.3.133",
 ]
