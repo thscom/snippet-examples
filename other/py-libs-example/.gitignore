@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+mysql/data/
+postgres/data/
+rabbitmq/data/
+mongodb/data/
+minio/data/
+instance/
+redis/data
