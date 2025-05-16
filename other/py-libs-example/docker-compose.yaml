@@ -96,3 +96,42 @@ services:
     command: server /data --address :9000 --console-address :9001
     volumes:
       - ./minio/data:/data
+
+  # es:
+  #   image: elasticsearch:8.18.1
+  #   container_name: es
+  #   ports:
+  #     - 9200:9200
+  #     - 9300:9300
+  #   environment:
+  #     - "ELASTIC_PASSWORD=example"
+  #     - "discovery.type=single-node"
+  #     - "xpack.security.enabled=true"
+  #     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  #     - "TZ=Asia/Shanghai"
+  #   volumes:
+  #     - ./elasticsearch/data:/usr/share/elasticsearch/data
+  #     - ./elasticsearch/logs:/usr/share/elasticsearch/logs
+  #     - ./elasticsearch/plugins:/usr/share/elasticsearch/plugins
+  #     - ./elasticsearch/config.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+  #   # ulimits:
+  #   #   memlock:
+  #   #     soft: -1
+  #   #     hard: -1
+  #   restart: unless-stopped
+
+  # kibana:
+  #   image: kibana:8.18.1
+  #   container_name: kibana
+  #   ports:
+  #     - 5601:5601
+  #   environment:
+  #     - "ELASTICSEARCH_HOSTS=http://es:9200"
+  #     - "ELASTICSEARCH_USERNAME=elastic"
+  #     - "ELASTICSEARCH_PASSWORD=example"
+  #     - "I18N_LOCALE=zh-CN"
+  #   restart: unless-stopped
+  #   depends_on:
+  #     - es
+  #   links:
+  #     - es

@@ -5,7 +5,7 @@ import sqlite3
 
 class TestSqlite:
     @classmethod
-    def setup_class(self):
+    def setup_class(cls):
         # check the db file
         instance_path = path.join(path.dirname(
             path.dirname(__file__)), 'instance')
@@ -17,7 +17,8 @@ class TestSqlite:
             f.close()
 
         # connect
-        self.conn = sqlite3.connect(db_file)
+        # cls.conn = sqlite3.connect(":memory:")
+        cls.conn = sqlite3.connect(db_file)
 
     def setup_method(self):
         cursor = self.conn.cursor()
@@ -33,12 +34,12 @@ class TestSqlite:
         self.conn.commit()
 
     @classmethod
-    def teardown_class(self):
-        cursor = self.conn.cursor()
+    def teardown_class(cls):
+        cursor = cls.conn.cursor()
         cursor.execute("DELETE FROM users")
-        self.conn.commit()
+        cls.conn.commit()
         cursor.close()
-        self.conn.close()
+        cls.conn.close()
 
     def test_create(self):
         cursor = self.conn.cursor()

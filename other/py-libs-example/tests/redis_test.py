@@ -3,8 +3,8 @@ import redis
 
 class TestRedis:
     @classmethod
-    def setup_class(self):
-        self.r = redis.Redis(
+    def setup_class(cls):
+        cls.r = redis.Redis(
             host='localhost',
             port=6379,
             db=0,
@@ -12,8 +12,8 @@ class TestRedis:
         )
 
     @classmethod
-    def teardown_class(self):
-        self.r.flushall()
+    def teardown_class(cls):
+        cls.r.flushall()
 
     def test_str(self):
         self.r.set('key', 'value')
@@ -23,7 +23,7 @@ class TestRedis:
     def test_list(self):
         self.r.lpush('list_key', 'item1', 'item2')
         items = self.r.lrange('list_key', 0, -1)
-        for item in items:
+        for item in items: # type: ignore
             print(item)
         # assert (len(items) == 2)
 

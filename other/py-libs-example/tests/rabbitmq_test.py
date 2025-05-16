@@ -5,19 +5,19 @@ from pika.adapters.blocking_connection import BlockingChannel
 class TestRabbitmq:
 
     @classmethod
-    def setup_class(self):
+    def setup_class(cls):
         credentials = pika.PlainCredentials('root', 'example')
-        self.conn = pika.BlockingConnection(pika.ConnectionParameters(
+        cls.conn = pika.BlockingConnection(pika.ConnectionParameters(
             host='localhost',
             port=5672,
             credentials=credentials
         ))
-        self.channel: BlockingChannel = self.conn.channel()
+        cls.channel: BlockingChannel = cls.conn.channel()
 
     @classmethod
-    def teardown_class(self):
-        self.channel.queue_delete(queue='hello')
-        self.conn.close()
+    def teardown_class(cls):
+        cls.channel.queue_delete(queue='hello')
+        cls.conn.close()
 
     def test_pub_sub(self):
         # 声明队列

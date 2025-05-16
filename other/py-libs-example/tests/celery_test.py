@@ -1,6 +1,7 @@
 # Run on Linux
 
 import pytest
+from typing import Any
 from celery import Celery
 
 
@@ -24,7 +25,7 @@ class TestCelery:
 
     @pytest.mark.skip(reason='Run on Linux')
     @pytest.mark.usefixtures('celery_worker')
-    def test_async_add(celery_app):
+    def test_async_add(celery_app: Any):
         @celery_app.task()
         def add(x, y):
             return x + y

@@ -3,14 +3,14 @@ from pymongo import MongoClient
 
 class TestMongo:
     @classmethod
-    def setup_class(self):
-        self.client = MongoClient('mongodb://root:example@localhost:27017')
-        self.db = self.client['test']
-        self.collection = self.db['test_collection']
+    def setup_class(cls):
+        cls.client = MongoClient('mongodb://root:example@localhost:27017')
+        cls.db = cls.client['test']
+        cls.collection = cls.db['test_collection']
 
     @classmethod
-    def teardown_class(self):
-        result = self.collection.delete_many({})
+    def teardown_class(cls):
+        result = cls.collection.delete_many({})
         print(f"Deleted {result.deleted_count} document(s)")
 
     def setup_method(self):

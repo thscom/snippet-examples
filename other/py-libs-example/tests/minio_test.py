@@ -10,32 +10,32 @@ class TestMinio:
     bucket_name: str = 'test-bucket'
 
     @classmethod
-    def setup_class(self):
-        self.client = Minio(
+    def setup_class(cls):
+        cls.client = Minio(
             endpoint="localhost:9000",
             access_key=access_key,
             secret_key=secret_key,
             secure=False
         )
 
-        self.instance_path = path.join(path.dirname(
+        cls.instance_path = path.join(path.dirname(
             path.dirname(__file__)), 'instance')
-        if not path.exists(self.instance_path):
-            makedirs(self.instance_path)
-        self.object_name = 'test.txt'
-        self.origin_file = path.join(self.instance_path, self.object_name)
-        if not path.exists(self.origin_file):
-            f = open(self.origin_file, 'w')
+        if not path.exists(cls.instance_path):
+            makedirs(cls.instance_path)
+        cls.object_name = 'test.txt'
+        cls.origin_file = path.join(cls.instance_path, cls.object_name)
+        if not path.exists(cls.origin_file):
+            f = open(cls.origin_file, 'w')
             f.close()
-        self.download_path = path.join(self.instance_path, 'download.txt')
+        cls.download_path = path.join(cls.instance_path, 'download.txt')
 
     @classmethod
-    def teardown_class(self):
+    def teardown_class(cls):
         try:
-            self.client.remove_bucket(self.bucket_name)
-            print(f"Delete Bucket {self.bucket_name} Succeed")
+            cls.client.remove_bucket(cls.bucket_name)
+            print(f"Delete Bucket {cls.bucket_name} Succeed")
         except S3Error as e:
-            print(f"Delete Bucket {self.bucket_name} Failed: {e}")
+            print(f"Delete Bucket {cls.bucket_name} Failed: {e}")
 
     def test_create_bucket(self):
         try:

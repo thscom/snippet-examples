@@ -3,8 +3,8 @@ import pymysql
 
 class TestMysql:
     @classmethod
-    def setup_class(self):
-        self.conn = pymysql.connect(
+    def setup_class(cls):
+        cls.conn = pymysql.connect(
             host='localhost',
             user='root',
             passwd='example',
@@ -14,12 +14,12 @@ class TestMysql:
         )
 
     @classmethod
-    def teardown_class(self):
-        cursor = self.conn.cursor()
+    def teardown_class(cls):
+        cursor = cls.conn.cursor()
         cursor.execute("DELETE FROM users")
-        self.conn.commit()
+        cls.conn.commit()
         cursor.close()
-        self.conn.close()
+        cls.conn.close()
 
     def setup_method(self):
         cursor = self.conn.cursor()
